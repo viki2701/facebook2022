@@ -32,11 +32,20 @@
         
         i{
             font-size: 24px;
+            color: grey;
         }
     }
     a:hover {
         background-color: rgb(0 0 0 / 6%);
         border-radius: 10px;
+    }
+    a:active{
+        i{
+            color: blue; 
+
+            border-bottom: 1px solid blue;
+
+        }
     }
 }
 .last-box{
