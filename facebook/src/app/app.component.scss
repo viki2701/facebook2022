@@ -3,7 +3,7 @@
 }
 .row-header{
     background-color: white;
-    height:55px;
+    height:50px;
 }
 .fb-logo{
     align-items: center;
@@ -11,11 +11,11 @@
     
 }
 .profile-photo{
-    align-items: center;
     height: 52px;
     width: 66px;
     border-radius: 27px;
     padding: 3px;
+    
 }
 .search-box{
     background-color: rgb(0 0 0 / 6%);
@@ -25,7 +25,35 @@
         border: transparent;
         background: transparent;
     }
+    input:focus{
+        box-shadow: none;
+    }
+    
 }
+.sm-menu-icon{
+        padding: 15px 30px;
+        
+        i{
+            font-size: 24px;
+            color: grey;
+        }
+    }
+    a.sm-menu-icon:hover {
+        background-color: rgb(0 0 0 / 6%);
+        border-radius: 10px;
+    }
+    a.sm-menu-icon:focus{
+        i{
+            color: blue; 
+        }
+        border-bottom: 3px solid blue;
+        background-color: transparent;
+        border-radius: 0px;
+       
+    }
+    
+
+
 .middle-box{
     a{
         padding: 15px 30px;
@@ -39,27 +67,35 @@
         background-color: rgb(0 0 0 / 6%);
         border-radius: 10px;
     }
-    a:active{
+    a:focus{
         i{
             color: blue; 
-
-            border-bottom: 1px solid blue;
-
         }
+        border-bottom: 3px solid blue;
+        background-color: transparent;
+        border-radius: 0px;
+       
     }
+    
 }
 .last-box{
     a{
         padding: 10px 12px;
-        background-color: rgb(0 0 0 / 6%);;
+        background-color: #E4E6EB;
         border-radius: 30px;
          margin-right: 10px;
         i{
             font-size: 24px;
+            color: rgba(0, 0, 0, 0.932);
         }
     }
     a:hover {
-        background-color: rgb(0 0 0 / 6%);
-        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.199);
+        border-radius: 30px;
     }
+    a:nth-child(4n-4){
+        background-color: white;
+    }
+
 }
+   
