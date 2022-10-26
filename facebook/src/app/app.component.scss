@@ -74,16 +74,18 @@
         border-bottom: 3px solid blue;
         background-color: transparent;
         border-radius: 0px;
+        text-decoration: none;
        
     }
     
 }
 .last-box{
     a{
+        text-decoration: none;
         padding: 10px 12px;
         background-color: #E4E6EB;
         border-radius: 30px;
-         margin-right: 10px;
+        margin-right: 10px;
         i{
             font-size: 24px;
             color: rgba(0, 0, 0, 0.932);
@@ -93,7 +95,7 @@
         background-color: rgba(0, 0, 0, 0.199);
         border-radius: 30px;
     }
-    a:nth-child(4n-4){
+    a:nth-child(5n-5){
         background-color: white;
     }
 
