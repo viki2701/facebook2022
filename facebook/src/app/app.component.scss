@@ -109,7 +109,7 @@ div.body{
     a{
         display: flex;
         text-decoration: none;
-        min-width: 268px;
+        min-width: 300px;
 
     }
 
@@ -127,8 +127,32 @@ div.body{
         width: 40px;
         border-radius: 24px;
         padding: 3px;
+    }
+    a:hover{
+        background-color: #58505014;
+        border-radius: 7px;
+    }
+
+}
+div.shortcuts{ 
+    p{
+        min-width: 255px;
+        color:rgb(101,103,107,);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 17px;
+        line-height: 20px;
+        vertical-align: baseline;
+    }
+    a{
+        min-width: 45px !important;
+        text-decoration: none !important;
 
     }
 
+    span{
+        text-decoration: none !important;
+        color: rgb(33,111,219) !important;
+       
+    }
 }
    
