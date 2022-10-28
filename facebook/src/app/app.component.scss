@@ -190,3 +190,83 @@ div.body{
         padding: 0px 1px;
     }
 }
+
+div.centre-main{
+    //background-color: #e594ef3d;
+    min-width: 716px;
+}
+
+div.sidebar-left{
+    //background-color: rgb(89, 134, 119);
+    min-width: 298px;
+}
+
+div.sponsored{
+    h6{
+        color: rgb(101, 103, 107);
+        vertical-align: baseline;
+        padding: 2px;
+    }
+}
+
+.sidebar-img-right{
+
+    a{
+        display: flex;
+        text-decoration: none;
+        min-width: 298px;
+        align-items: center;
+
+    }
+
+    span{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:15px;
+        font-weight: 500;
+        line-height:20px;
+        color: rgb(5,5,5);
+       align-items: center;
+        margin-left: 6px;
+    }
+    img{
+        height: 40px;
+        width: 40px;
+        padding: 3px;
+    }
+    a:hover{
+        background-color: #58505014;
+        border-radius: 7px;
+    }
+
+    i{
+        color: black;
+        background-color: rgba(88, 80, 80, 0.0784313725);
+        border-radius: 13px;
+        width: 22px;
+        height: 26px;
+        padding-left: 5px;
+        padding-top: 0;
+    }
+
+}
+
+div.sidebar-right-contacts{
+    h6{
+        color: rgb(101, 103, 107);
+        vertical-align: baseline;
+        padding: 2px;
+        min-width: 185px;
+    }
+
+    a{
+        padding:2px;
+        margin: 1px 3px;
+        color: rgb(101, 103, 107);
+    
+    }
+    a:hover{
+        background-color: rgb(0 0 0 / 6%);
+        border-radius: 10px;
+    }
+
+}
