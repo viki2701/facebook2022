@@ -104,7 +104,7 @@ div.body{
     background-color:  #F0F2F5;
 }
 
-.sidebar-div{
+.sidebar-img-lef{
 
     a{
         display: flex;
@@ -134,25 +134,59 @@ div.body{
     }
 
 }
-div.shortcuts{ 
-    p{
-        min-width: 255px;
-        color:rgb(101,103,107,);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 17px;
-        line-height: 20px;
+
+.shortcuts{
+    h5{
+        color: rgb(101, 103, 107);
         vertical-align: baseline;
+        padding: 2px;
+        min-width: 264px;
     }
     a{
-        min-width: 45px !important;
-        text-decoration: none !important;
+        padding:2px;
+        text-decoration: none;
+        visibility: hidden;
 
     }
-
     span{
-        text-decoration: none !important;
-        color: rgb(33,111,219) !important;
+        text-decoration: none;
+        color: rgb(33,111,219);
+        vertical-align:baseline;
+
+    }
+    a:hover{
+        background-color: #58505014;
+        border-radius: 7px;
+    }
+
+}
+.shortcuts:hover{
+    a{
+       visibility:visible;
+    }
+
+}
+
+.game-logo{
+    border-radius: 15px !important;
+}
+
+.sidebar-left-bottom{
+        line-height: 14px;
+        margin-top: 10px;
+        margin-bottom: 13px;
+    a{
+        color: rgb(101, 103, 107);
+        vertical-align: baseline;
+        font-size: 13px;
+        padding:0px 3px;
        
     }
+    
+    span{
+        color: rgb(101, 103, 107);
+        vertical-align: baseline;
+        font-size: 13px;
+        padding: 0px 1px;
+    }
 }
-   
