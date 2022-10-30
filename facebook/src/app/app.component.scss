@@ -67,6 +67,7 @@ div.body{
         background-color: rgb(0 0 0 / 6%);
         border-radius: 10px;
     }
+
     a:focus{
         i{
             color: blue; 
@@ -99,9 +100,15 @@ div.body{
         background-color: white;
     }
 
+
 }
 .row-slidbar-body{
-    background-color:  #F0F2F5;
+    background-color: #F0F2F5;
+    width: 1350px;
+}
+
+.left-sidebar-body{
+    width: 220px;
 }
 
 .sidebar-img-lef{
@@ -109,8 +116,7 @@ div.body{
     a{
         display: flex;
         text-decoration: none;
-        min-width: 300px;
-
+    
     }
 
     span{
@@ -140,7 +146,7 @@ div.body{
         color: rgb(101, 103, 107);
         vertical-align: baseline;
         padding: 2px;
-        min-width: 264px;
+        min-width: 188px;
     }
     a{
         padding:2px;
@@ -191,14 +197,10 @@ div.body{
     }
 }
 
-div.centre-main{
-    //background-color: #e594ef3d;
-    min-width: 716px;
-}
 
-div.sidebar-left{
-    //background-color: rgb(89, 134, 119);
-    min-width: 298px;
+div.sidebar-right{
+    min-width: 221px;
+    margin-left: 3px;
 }
 
 div.sponsored{
@@ -214,7 +216,7 @@ div.sponsored{
     a{
         display: flex;
         text-decoration: none;
-        min-width: 298px;
+        max-width: 298px;
         align-items: center;
 
     }
@@ -255,7 +257,6 @@ div.sidebar-right-contacts{
         color: rgb(101, 103, 107);
         vertical-align: baseline;
         padding: 2px;
-        min-width: 185px;
     }
 
     a{
@@ -269,4 +270,15 @@ div.sidebar-right-contacts{
         border-radius: 10px;
     }
 
+}
+
+div.centre-main{
+       min-width: 480px;
+}
+
+.centre-main-card{
+    background-color: white;
+    min-width: 500px;
+    min-height: 550px;
+    border-radius: 8px;
 }
