@@ -37,9 +37,36 @@ export class AppComponent {
       postImage:'assets/facebook/sidebar icon/Post image/post image 3.jpg',
       likedBy:'Jack Ma',
       postedTime : '4 h',
-    },
+    }
   ];
 
+  contract = [
 
+    {
+      contractName:'Abdul Kalam',
+      contractImage:'assets/facebook/People/Abdul Kalam.png',
+    },
+    {
+      contractName:'Bil Gates',
+      contractImage:'assets/facebook/People/Bill Gates.jpg',
+    },
+    {
+      contractName:'Abdul Kalam',
+      contractImage:'assets/facebook/People/Abdul Kalam.png',
+    },
+    {
+      contractName:'Bil Gates',
+      contractImage:'assets/facebook/People/Bill Gates.jpg',
+    },
+    {
+      contractName:'Iron Man',
+      contractImage:'assets/facebook/People/Iron Man.jpg',
+    },
+    {
+      contractName:'Jack Ma',
+      contractImage:'assets/facebook/People/Jack Ma.jpg',
+    },
+
+];
 
 }
