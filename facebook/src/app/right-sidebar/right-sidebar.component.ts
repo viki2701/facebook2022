@@ -56,7 +56,7 @@ export class RightSidebarComponent implements OnInit {
     {
       contactName:'Mukesh Ambani',
       contactImage:'assets/facebook/People/Mukesh Ambani.jpg',
-      contactOnline:'active',
+      contactOnline:'',
     },
     {
       contactName:'Nikola Tesla',

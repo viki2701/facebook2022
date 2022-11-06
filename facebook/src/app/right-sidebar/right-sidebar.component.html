@@ -26,9 +26,11 @@
 
       <div class="sidebar-img-right" *ngFor="let y of contact">
         <a href="#" class="algin-content-center">
-          <img [src]="y.contactImage" alt="sidebar-right" class="rounded-circle">
+          <div class="contact-img-online">
+            <div class="contactonline" *ngIf="y.contactOnline != ''"><div class="contactonline-inside"></div></div>
+            <img [src]="y.contactImage" alt="sidebar-right" class="rounded-circle">
+          </div>
           <span >{{y.contactName}}</span>
-          <div class="contactonline" *ngIf="y.contactOnline != ''"></div>
         </a>
       </div>
         

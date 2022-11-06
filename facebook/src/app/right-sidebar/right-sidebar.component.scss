@@ -51,16 +51,32 @@ div.sponsored{
         padding-top: 0;
     }
 
+    .contact-img-online{
+        position: relative;
+    }
+
     .contactonline{
+        position: absolute;
+        background-color: white;
+        height: 8px;
+        width: 8px;
+        border-radius: 50px;
+        padding:2px;
+        bottom: 3px;
+        right: 3px;
+
+    }
+
+    div.contactonline-inside{
         background-color: green;
-        height: 7px;
-        width: 7px;
-        border-radius: 7px;
-        margin-left: 6px;
-        margin-top: 6px;
+        height: 5px;
+        width: 5px;
+        border-radius: 50px;
+    
     }
 
 }
+
 
 div.sidebar-right-contacts{
     h6{
