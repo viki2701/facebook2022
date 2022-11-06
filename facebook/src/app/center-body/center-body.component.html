@@ -1,1 +1,61 @@
+<div class="card centre-main-card py-1 mb-3" *ngFor="let x of post">
+    <div class="card-header bg-white d-flex align-items-center justify-content-between p-2">
+      <div class="d-flex">
+<a href="#">
+<img [src]="x.profileImage" alt="Profile Image" class="card-img-people rounded-circle">
+</a>
+<div class="pl-2 header-name">
+<div class="d-flex flex-cloum">
+<a href="#" class="text-dark"><h6>{{x.profileName}}</h6></a>
+</div>
+<div>
+  <a href="#"><small class="text-muted">{{x.postedTime}}</small></a><small class="m-1">.</small>
+  <small class="text-muted m-1"><i class="fa-solid fa-earth-americas"></i></small>
+</div>
+</div>
+      </div>
+      <div class="card-menu-icon">
+<a href="#" class="rounded-circle p-2"><i class="fa-solid fa-ellipsis text-muted"></i></a>
+      </div>
+    </div>
+    <img  *ngIf="x.postImage != ''" [src]="x.postImage"  alt="Tesla car" class="card-img-bottom border-bottom">
+    <span class="postmessage" *ngIf="x.postMessage != ''">{{x.postMessage}}</span>
+    <div class="card-body p-2">
+        <div class="flex-cloum">
+      <div class="algin-item-center">
+         <div class="d-flex flex-row pl-2">
+          <a href="#"><svg class="rounded-circle like-svg" xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'><defs><linearGradient id='a' x1='50%' x2='50%' y1='0%' y2='100%'><stop offset='0%' stop-color='#18AFFF'/><stop offset='100%' stop-color='#0062DF'/></linearGradient><filter id='c' width='118.8%' height='118.8%' x='-9.4%' y='-9.4%' filterUnits='objectBoundingBox'><feGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/><feOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/><feComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/><feColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/></filter><path id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/></defs><g fill='none'><use fill='url(#a)' xlink:href='#b'/><use fill='black' filter='url(#c)' xlink:href='#b'/><path fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/></g></svg></a>
+            <a href="#"><span class="card-text text-muted pl-2"></span>{{x.likedBy}}</a>
+          </div>
+      </div>
+      <div><hr/></div>
+      <div class="link-comment d-flex justify-content-between">
+        <a href="#" >
+          <i class="fa-solid fa-thumbs-up"></i>
+          <span class="font-weight-bold">Like</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <span class="font-weight-bold">Comment</span>
+        </a>
+      </div>
+      <hr/>
+      <div class="write-a-comment mt-3 pl-2 d-flex algin-item-center">
+        <img src="assets\facebook\Viki photo.jpeg" alt="viki photo" class="rounded-circle">
+        <div class="write-comment-text d-flex flex-row algin-item-center justify-content-between">
+          <div class="text-a-comment"><input type="text" class="form-control"  placeholder="Write a comment..." >
+          </div> 
+          <div class="d-flex  write-comment-icon align-items-center mr-3">
+          <div><a title="icon" href="#"><i class="fa-regular fa-circle-user"></i></a></div>
+          <div><a title="icon" href="#"><i class="fa-regular fa-face-smile"></i></a></div>
+          <div><a title="icon" href="#"><i class="fa-solid fa-camera-rotate"></i></a></div>
+          <div><a title="icon" href="#"><i class="fa-regular fa-square"></i></a></div>
+          <div><a title="icon" href="#"><i class="fa-regular fa-note-sticky"></i></a></div>
+        </div>
 
+        </div>
+    </div>
+    </div>
+     
+   </div>
+</div>

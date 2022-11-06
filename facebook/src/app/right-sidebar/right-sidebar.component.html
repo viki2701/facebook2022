@@ -1,1 +1,46 @@
-<p>right-sidebar works!</p>
+<div class="sidebar-right d-flex flex-column">
+    <div class="sponsored"><h6>Sponsored</h6></div>
+    <span class="border-bottom mt-1 mb-1"></span>
+    <div class="sponsored"><h6>Birthdays</h6></div>
+    <div class="sidebar-img-right">
+      <a href="#">
+        <img src="assets\facebook\sidebar icon\giftbox.png" alt="sidebar-right" class="rounded-circle">
+        <span ><b>R Guna</b> and <b>3 others</b> have their birthdays today.</span>
+      </a>
+      </div>
+      <span class="border-bottom mt-3 mb-3"></span>
+      <div class="sidebar-right-contacts d-flex  justify-content-between">
+        <h6>Contacts</h6>
+        <div class="d-flex">
+        <a title="icon" href="#">
+          <i class="fa-sharp fa-solid fa-video pl-2 pr-2"></i>
+        </a>
+        <a title="icon" title="icon" href="#">
+          <i class="fa-solid fa-magnifying-glass pl-2 pr-2"></i>
+        </a>
+        <a title="icon" href="#">
+          <i class="fa-solid fa-ellipsis pl-2 pr-2"></i>
+        </a>
+        </div>
+      </div>
+
+      <div class="sidebar-img-right" *ngFor="let y of contact">
+        <a href="#" class="algin-content-center">
+          <img [src]="y.contactImage" alt="sidebar-right" class="rounded-circle">
+          <span >{{y.contactName}}</span>
+          <div class="contactonline" *ngIf="y.contactOnline != ''"></div>
+        </a>
+      </div>
+        
+        <span class="border-bottom mt-2 mb-2"></span>
+        <div class="sponsored"><h6>Group conversations</h6></div>
+        <div class="sidebar-img-right">
+            <a href="#">
+              <i class="fa-light fa-plus m-2"></i>
+               <span >Create New Group</span>
+            </a>
+        </div>
+        <span class="mt-1 mb-1"></span>
+         
+
+  </div>

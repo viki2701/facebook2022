@@ -1,0 +1,115 @@
+
+div.centre-main{
+       min-width: 480px;
+}
+
+.centre-main-card{
+    background-color: white;
+    min-width: 485px;
+    max-height: 100%;
+    border-radius: 8px;
+    margin: 0px 50px;
+}
+
+.postmessage{
+    padding:20px;
+}
+
+img.card-img-people{
+    height: 52px;
+    width:52px;
+}
+
+.header-name{
+    line-height: 0px;
+}
+
+.card-menu-icon{
+    a{
+        height: 40px;
+        width: 40px;
+        border-radius: 7px;
+    }
+    a:hover{
+        background-color: #58505014;
+    }
+}
+
+.like-svg{
+    width: 20px;
+    height:20px;
+}
+
+.link-comment{
+    a{
+        padding: 4px 75px;
+        justify-items: center;
+        border-radius:7px;
+        text-decoration: none;
+        color:rgb(101,103,107);
+
+    }
+
+    a:nth-child(2n-1){
+        color: rgb(32,120,244) !important;
+    }
+    span{
+        padding-left:12px;
+    }
+
+    a:hover{
+        background-color: rgb(0 0 0 / 6%); 
+    }
+
+}
+hr{
+    margin:6px !important;
+}
+.write-a-comment{
+    img{
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+.write-comment-text{
+    width: 407px;
+    height: 40px;
+    border-radius: 33px;
+    padding-left: 14px;
+    margin-left: 9px;
+    background-color: rgb(240,242,245);
+
+}
+
+.text-a-comment{
+    input{
+        width: 210px;
+        background-color: transparent;
+        border: none;
+    }
+    input:focus{
+        box-shadow: none;
+    }
+}
+
+.write-comment-icon{
+
+    a{
+        padding:4px;
+        margin:2px 4px;
+        color:rgb(101,103,107);
+        border-radius: 10px;
+    
+    }
+    i{
+        font-size: 18px;
+    }
+    a:hover{
+        background-color: rgba(0, 0, 0, 0.171);
+    }
+}
+
+
+
