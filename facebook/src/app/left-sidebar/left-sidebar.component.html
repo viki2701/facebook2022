@@ -1,1 +1,34 @@
-<p>left-sidebar works!</p>
+<div class="d-flex flex-column mr-1 left-sidebar-body ml-2">
+
+
+    <div class="sidebar-img-left" *ngFor="let leftsidebar of leftsidelist">
+  <a href="#">
+    <img [src]="leftsidebar.leftsideIcon" alt="sidebar-image">
+    <span >{{leftsidebar.leftsideName}}</span>
+  </a>
+  </div>
+
+<span class="border-bottom"></span>
+<div class="shortcuts d-flex flex-row align-items-center mt-3">
+  <h5>Your shortcuts</h5>
+  <a href="#">
+      <span >Edit</span>
+  </a>
+  </div>
+ 
+  <div class="sidebar-img-left" *ngFor="let shortcutlist of shortcut">
+  <a href="#">
+    <img [src]="shortcutlist.shortcutImage" alt="sidebar-image" class="game-logo">
+    <span >{{shortcutlist.shortcutName}}</span>
+  </a>
+  </div>
+
+  <div class="sidebar-left-bottom">
+  <div>
+  <a href="#">Privacy</a><span>·</span><a href="#">Terms</a><span>·</span><a href="#">Advertising</a><span>·</span>
+  </div>
+  <div>
+    <a href="#">Ad choices</a><span>·</span> <a href="#">Cookies</a><span>·</span><span>Meta © 2022</span>
+  </div>
+  </div>
+  </div>

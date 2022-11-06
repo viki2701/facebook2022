@@ -1,0 +1,92 @@
+
+
+
+.left-sidebar-body{
+    width: 220px;
+}
+
+.sidebar-img-left{
+
+    a{
+        display: flex;
+        text-decoration: none;
+    
+    }
+
+    span{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:15px;
+        font-weight: 500;
+        line-height:20px;
+        color: rgb(5,5,5);
+        margin-top: 9px;
+        margin-left: 6px;
+    }
+    img{
+        height: 40px;
+        width: 40px;
+        border-radius: 24px;
+        padding: 3px;
+    }
+    a:hover{
+        background-color: #58505014;
+        border-radius: 7px;
+    }
+
+}
+
+.shortcuts{
+    h5{
+        color: rgb(101, 103, 107);
+        vertical-align: baseline;
+        padding: 2px;
+        min-width: 188px;
+    }
+    a{
+        padding:2px;
+        text-decoration: none;
+        visibility: hidden;
+
+    }
+    span{
+        text-decoration: none;
+        color: rgb(33,111,219);
+        vertical-align:baseline;
+
+    }
+    a:hover{
+        background-color: #58505014;
+        border-radius: 7px;
+    }
+
+}
+.shortcuts:hover{
+    a{
+       visibility:visible;
+    }
+
+}
+
+.game-logo{
+    border-radius: 15px !important;
+}
+
+.sidebar-left-bottom{
+        line-height: 14px;
+        margin-top: 10px;
+        margin-bottom: 13px;
+    a{
+        color: rgb(101, 103, 107);
+        vertical-align: baseline;
+        font-size: 13px;
+        padding:0px 3px;
+       
+    }
+    
+    span{
+        color: rgb(101, 103, 107);
+        vertical-align: baseline;
+        font-size: 13px;
+        padding: 0px 1px;
+    }
+}

@@ -9,6 +9,8 @@ export class AppComponent implements OnInit{
 
   title = 'facebook';
   a :any;
+
+
   post = [
     {
       profileName : 'Elon Musk',
@@ -47,16 +49,16 @@ export class AppComponent implements OnInit{
       postMessage:''
     },
     {
-      profileName : 'Bill Gates',
-      profileImage:'assets/facebook/People/Bill Gates.jpg',
+      profileName : 'Mahindra Singh Dhoni',
+      profileImage:'assets/facebook/People/Mahindra Singh Dhoni.jpg',
       postImage:'',
       likedBy:'Mahindra Singh Dhoni',
       postedTime : '3 h',
       postMessage:'Hi, How are you'
     },
     {
-      profileName : 'Nikola Tesla',
-      profileImage:'assets/facebook/People/Nikola Tesla.jpg',
+      profileName : 'Iron Man',
+      profileImage:'assets/facebook/People/Iron Man.jpg',
       postImage:'',
       likedBy:'Jack Ma',
       postedTime : '4 h',
@@ -65,34 +67,55 @@ export class AppComponent implements OnInit{
     }
   ];
 
-  contract = [
+  contact = [
 
     {
-      contractName:'Abdul Kalam',
-      contractImage:'assets/facebook/People/Abdul Kalam.png',
+      contactName:'Abdul Kalam',
+      contactImage:'assets/facebook/People/Abdul Kalam.png',
     },
     {
-      contractName:'Bil Gates',
-      contractImage:'assets/facebook/People/Bill Gates.jpg',
+      contactName:'Bil Gates',
+      contactImage:'assets/facebook/People/Bill Gates.jpg',
     },
     {
-      contractName:'Abdul Kalam',
-      contractImage:'assets/facebook/People/Abdul Kalam.png',
+      contactName:'Elon Musk',
+      contactImage:'assets/facebook/People/Elon Musk.jpg',
     },
     {
-      contractName:'Bil Gates',
-      contractImage:'assets/facebook/People/Bill Gates.jpg',
+      contactName:'Jeff Bezons',
+      contactImage:'assets/facebook/People/Jeff Bezons.jpg',
     },
     {
-      contractName:'Iron Man',
-      contractImage:'assets/facebook/People/Iron Man.jpg',
+      contactName:'Iron Man',
+      contactImage:'assets/facebook/People/Iron Man.jpg',
     },
     {
-      contractName:'Jack Ma',
-      contractImage:'assets/facebook/People/Jack Ma.jpg',
+      contactName:'Jack Ma',
+      contactImage:'assets/facebook/People/Jack Ma.jpg',
     },
-
+    {
+      contactName:'Mahindra Singh Dhoni',
+      contactImage:'assets/facebook/People/Mahindra Singh Dhoni.jpg',
+    },
+    {
+      contactName:'Mark Zuckerberg',
+      contactImage:'assets/facebook/People/Mark Zuckerberg.jpg',
+    },
+    {
+      contactName:'Mukesh Ambani',
+      contactImage:'assets/facebook/People/Mukesh Ambani.jpg',
+    },
+    {
+      contactName:'Nikola Tesla',
+      contactImage:'assets/facebook/People/Nikola Tesla.jpg',
+    },
 ];
+
+
+
+
+
+
 
 constructor(public httpapi :HttpClient){
 
@@ -101,7 +124,7 @@ ngOnInit(): void {
 
   this.httpapi.get('https://api.publicapis.org/entries').subscribe(
     x=>{
-     // this.a=x;
+    //this.a=x;
     }
 
   )
