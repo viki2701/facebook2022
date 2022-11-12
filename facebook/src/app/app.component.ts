@@ -8,20 +8,31 @@ import { HttpClient } from '@angular/common/http'
 export class AppComponent implements OnInit{
 
   title = 'facebook';
-  a :any;
+  studentDetails :any;
  
+  form:any={
+    search : ''
+  }
 constructor(public httpapi :HttpClient){
 
 }
 ngOnInit(): void {
 
-  this.httpapi.get('https://api.publicapis.org/entries').subscribe(
-    x=>{
-    //this.a=x;
-    }
+  //this.getDetails("Bill");
 
-  )
 }
 
+
+getDetails(name:string){
+this.httpapi.get("https://api.agify.io/?name="+name).subscribe(
+  response =>{
+   this.studentDetails = response;
+  }
+);
+}
+
+showData(){
+  this.getDetails(this.form.search);
+}
 
 }
