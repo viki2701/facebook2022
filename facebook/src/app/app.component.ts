@@ -8,17 +8,18 @@ import { HttpClient } from '@angular/common/http'
 export class AppComponent implements OnInit{
 
   title = 'facebook';
+
   studentDetails :any;
- 
+
+
   form:any={
     search : ''
   }
 constructor(public httpapi :HttpClient){
-
 }
 ngOnInit(): void {
 
-  //this.getDetails("Bill");
+  
 
 }
 
